@@ -1,0 +1,13 @@
+{
+  "name": "dunk-archive-96-081",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile interactive web game DUNK Archive 96-081.",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs'); for (const f of ['index.html','styles.css','app.js']) { if (!fs.existsSync(f)) throw new Error(f + ' is missing'); } console.log('Static build OK');\"",
+    "serve": "npx http-server . -p 4173 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
